@@ -1,11 +1,7 @@
 class TweetsController < ApplicationController
 
   def index
-<<<<<<< HEAD
     @tweets = Tweet.all.order("id DESC").page(params[:page]).per(5)
-=======
-    @tweets = Tweet.all
->>>>>>> dbd03bbd67c50898b79f6b520ce9f852149e29ec
   end
 
   def new
